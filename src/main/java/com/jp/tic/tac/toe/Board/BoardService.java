@@ -36,6 +36,7 @@ public class BoardService {
   public int[] alphaBeta(Board board, int player, int alpha, int beta) {
 
     int[] results = new int[2];
+    results[1] = -1;
     if (checkWin(board) != 0 || validMoves(board).get(0).getMove() == -1) {
       results[0] = checkWin(board);
       return results;

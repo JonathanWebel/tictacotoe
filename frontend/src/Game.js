@@ -71,7 +71,7 @@ class Game extends React.Component {
                         });
                     const nextMove = await rawMove.json();
 
-                    if (nextMove.move === -1||squares[nextMove.move]) {
+                    if (nextMove.move === -1) {
                         return;
                     }
                     console.log("This is the move " + (nextMove.move));
